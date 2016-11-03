@@ -1,0 +1,34 @@
+﻿{
+  "children": [
+    {     
+      "text": "CRM菜单 1",
+      "leaf": true,
+      "iconCls": "x-fa fa-send",    
+      "viewType": "crm.friend",
+      "requires": [ "crm.view.email.FriendsList", "crm.view.email.FriendsListViewController", "crm.view.email.FriendsListViewModel", "crm.store.email.Friends", "crm.data.email.Friends" ]
+
+    },
+    {
+      "text": "CRM菜单 2",
+      "iconCls": "x-fa fa-user",
+      "expanded": false,
+      "children": [
+        {
+          "text": "CRM菜单 2-1",
+          "leaf": true,
+          "iconCls": "x-fa fa-question",        
+          "viewType": "crm.email",
+          "requires": [ "crm.view.email.Email", "crm.view.email.EmailController", "crm.view.email.EmailModel", "crm.view.email.Inbox", "crm.store.email.Inbox", "crm.data.email.Inbox" ]
+        }
+      ]
+    },
+    {
+      "text": "CRM菜单 3",
+      "leaf": true,
+      "iconCls": "x-fa fa-send",
+      "viewType": "crm.mytest",
+      "requires": [ "crm.view.my.test" ]
+    }
+  ]
+}
+

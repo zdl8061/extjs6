@@ -1,0 +1,59 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link href="classic/resources/Admin-all.css" rel="stylesheet" />
+    <!--<link href="classic/theme-triton/resources/theme-triton-all.css" rel="stylesheet" />-->
+    <script src="Ext/ext-all-debug.js"></script>   
+    <script src="classic/locale/locale-zh_CN.js"></script>
+   
+    <script type="text/javascript">        
+      
+        var siteConfig = {
+            modules: {
+                "crm": {
+                    "name": "crm", "defaultToken": "crm.mytest"
+                },
+                "saas": {
+                    "name": "saas", "defaultToken": "saas.friend"
+                }
+            },
+            defaultModule: "crm"
+        }
+
+        Ext.Loader.setConfig({
+            enabled: true,
+            paths: {
+                "oa": "frame",
+                "crm": "nex/crm",
+                "saas":"nex/saas"
+            }
+        });     
+
+        Ext.define("oa.Application", {
+            extend: "Ext.app.Application",
+            name: "oa",          
+            requires: ['oa.view.AppFrame'],
+            mainView: 'oa.view.AppFrame',
+        
+            launch: function () {
+            }
+        });
+        
+        Ext.onReady(function () {
+
+            App = Ext.create("oa.Application");
+
+        });
+
+        var s = {};
+        var t = new s();
+        debugger;
+       
+    </script>
+</head>
+<body></body>
+</html>

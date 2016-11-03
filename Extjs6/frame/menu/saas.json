@@ -1,0 +1,28 @@
+﻿{
+  "children": [
+    {    
+      "text": "SAAS菜单 1",
+      "leaf": true,
+      "iconCls": "x-fa fa-send",    
+      "viewType": "saas.friend",
+      "requires": ["saas.view.email.FriendsList","saas.view.email.FriendsListViewController","saas.view.email.FriendsListViewModel","saas.store.email.Friends","saas.data.email.Friends"]
+    },
+    {
+    
+      "text": "SAAS菜单 2",
+      "iconCls": "x-fa fa-user",
+      "expanded": false,
+      "children": [
+        {
+          
+          "text": "SAAS菜单 2-1",
+          "leaf": true,
+          "iconCls": "x-fa fa-question",         
+          "viewType": "saas.email",
+            "requires": [ "saas.view.email.Email", "saas.view.email.EmailController", "saas.view.email.EmailModel", "saas.view.email.Inbox", "saas.store.email.Inbox", "saas.data.email.Inbox" ]
+        }
+      ]
+    }
+  ]
+}
+
